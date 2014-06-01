@@ -1,0 +1,27 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45em" height="26em" >
+
+<image id="motion_picture" class="still" width="45em" height="26em" xlink:href='make_the_rabbit_go_away.svg'/>
+
+
+<script type="text/ecmascript"><![CDATA[
+  var motion_picture = document.getElementById("motion_picture");
+  console.log(motion_picture);
+    
+  motion_picture.addEventListener("click",function(){
+    console.log("clicked");
+
+    if(motion_picture.classList[0]==="still") {
+       motion_picture.setAttribute('class','motion'); 
+       motion_picture.setAttribute('xlink:href', 'make_the_rabbit_go_away.gif');
+    } 
+    else {
+       motion_picture.setAttribute('class','still'); 
+       motion_picture.setAttribute('xlink:href', 'make_the_rabbit_go_away.svg');
+    } 
+
+  });
+  
+]]></script> 
+
+</svg>
